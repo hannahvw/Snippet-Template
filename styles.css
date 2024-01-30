@@ -48,6 +48,11 @@ h1 {
   display: none;
 }
 
+.sign-in {
+  text-decoration: none;
+  color: #000;
+}
+
 .start-btn {
   text-decoration: none;
   background-color: #000;
@@ -59,6 +64,7 @@ h1 {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   border-radius: 5px;
+  text-align: center;
 }
 
 .start-btn span {
@@ -83,7 +89,7 @@ h2 {
   font-size: 2rem;
 }
 #about-section .start-btn {
-  width: 50%;
+  max-width: 60%;
 }
 
 footer {
@@ -122,7 +128,7 @@ footer {
     max-width: 40%;
   }
   #about-section .start-btn {
-    width: 30%;
+    max-width: 40%;
   }
   footer {
     display: flex;
@@ -214,7 +220,7 @@ footer {
     text-decoration: none;
     background-color: #000;
     color: #fff;
-    width: 100%;
+    max-width: 100%;
     border: none;
     outline: none;
     padding: 10px;
@@ -248,9 +254,8 @@ footer {
     padding: 50px 0 10px;
   }
 
-   #about-section .start-btn {
-    max-width: 45%;
-    text-align: center;
+  #about-section .start-btn {
+    max-width: 50%;
   }
 
   footer {
