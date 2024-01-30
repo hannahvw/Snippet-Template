@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  max-width: 375px;
+  max-width: 450px;
 }
 
 header {
@@ -44,7 +44,13 @@ h1 {
   font-weight: 700;
 }
 
-#start-btn {
+.tablet-nav {
+  display: none;
+}
+
+
+
+.start-btn {
   text-decoration: none;
   background-color: #000;
   color: #fff;
@@ -57,7 +63,7 @@ h1 {
   border-radius: 5px;
 }
 
-#start-btn span {
+.start-btn span {
   color: rgb(183, 182, 182);
 }
 #about-section img {
@@ -78,7 +84,7 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-#about-section #start-btn {
+#about-section .start-btn {
   width: 60%;
 }
 
@@ -102,4 +108,61 @@ footer {
   text-decoration: none;
   color: #000;
   font-size: 0.75rem;
+}
+
+@media screen and (min-width: 451px) and (max-width: 820px) {
+  body {
+    max-width: 820px;
+  }
+
+  #hero-section {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .start-btn {
+    max-width: 40%;
+  }
+  #about-section .start-btn {
+    width: 40%;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+  }
+
+  #nav-menu {
+    display: none;
+  }
+
+  .tablet-nav {
+    display: unset;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .tablet-nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  #nav-btn {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  width: 55%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+}
+#nav-btn span {
+  color: rgb(183, 182, 182);
+}
 }
